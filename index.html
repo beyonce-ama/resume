@@ -11,52 +11,83 @@
     >
     <style>
         body {
-            background-color: #f8f9fa;
+            background-color: #f4f4f9;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
+        }
+        .index-container {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+        }
+        .index-header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            margin: -40px -40px 20px;
+        }
+        .index-header h1 {
+            font-size: 2.5rem;
             margin: 0;
         }
-        .header {
-            background-color: #343a40;
-            color: white;
-            padding: 30px 40px;
-            text-align: center;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        .description {
+            color: #6c757d;
+            margin-bottom: 30px;
+            font-size: 1.1rem;
         }
-        .header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
+        .resume-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
-        .header a {
-            color: white;
+        .resume-links a {
             text-decoration: none;
-            margin: 10px 15px;
-            font-size: 1.2rem;
+            color: #fff;
+            background: #343a40;
+            padding: 15px 25px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            transition: transform 0.3s, background 0.3s;
         }
-        .header a:hover {
-            color: #17a2b8;
-            text-decoration: underline;
+        .resume-links a:hover {
+            background: #17a2b8;
+            transform: translateY(-5px);
+        }
+        footer {
+            margin-top: 30px;
+            color: #adb5bd;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
-<div class="header">
-    <h1>DevOps Resumes</h1>
-        <nav>
-            <a href="ama.html" class="active">Beyonce Ama</a>
-            <a href="carreon.html">Monica Carreon</a>
-            <a href="macalino.html">Rachelle Anne Macalino</a>
-            <a href="gamboa.html">Romel Gamboa</a>
-            <a href="arpon.html">Jolas Arpon</a>
-            <a href="larin.html">Kayle Cedric Larin</a>
-        </nav>
+<div class="index-container">
+    <div class="index-header">
+        <h1>DevOps Resumes</h1>
+    </div>
+    <p class="description">This page showcases the resumes of our group members for the DevOps activity. Click on a name to view each member's profile.</p>
+    <div class="resume-links">
+        <a href="ama.html">Beyonce Ama</a>
+        <a href="carreon.html">Monica Carreon</a>
+        <a href="macalino.html">Rachelle Anne Macalino</a>
+        <a href="gamboa.html">Romel Gamboa</a>
+        <a href="arpon.html">Jolas Arpon</a>
+        <a href="larin.html">Kayle Cedric Larin</a>
+    </div>
 </div>
 
-<!-- Bootstrap JS -->
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
 ></script>
